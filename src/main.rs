@@ -1,4 +1,5 @@
 mod input;
+mod choose;
 
 fn main() {
     println!("Algorithmic Password Generator. Enter -d when done.");

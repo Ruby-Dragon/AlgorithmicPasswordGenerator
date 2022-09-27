@@ -3,7 +3,8 @@ pub mod input{
     //struct used to return data collected for word sets and algorithm choices
     pub struct PasswordInput{
         pub words:Vec<String>,
-        pub algorithms:Vec<i32>
+        pub algorithms:Vec<i32>,
+        pub length: i32
     }
 
     //Get all the words and algorithm choices for each word set
@@ -46,7 +47,8 @@ pub mod input{
         //put data into struct to be returned
         let finished = PasswordInput {
             words : output_vector,
-            algorithms : algorithm_vector
+            algorithms : algorithm_vector,
+            length : output_vector.len() as i32
         };
 
         //return collected data
