@@ -4,7 +4,7 @@ pub mod input{
         'word: loop {
             let mut word = String::new();
             std::io::stdin().read_line(&mut word).unwrap();
-            if &word == "-d"
+            if word.trim() == "-d"
             {
                 println!("{word}");
                 break 'word;
