@@ -12,4 +12,6 @@ fn main() {
     for x in &output_vector.algorithms{
         println!("{x}");
     }
+
+    println!("{}", choose::choose::run_algorithms(output_vector))
 }

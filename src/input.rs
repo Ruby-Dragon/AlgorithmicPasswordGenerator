@@ -46,7 +46,7 @@ pub mod input{
 
         //put data into struct to be returned
         let finished = PasswordInput {
-            words : output_vector,
+            words : output_vector.clone(),
             algorithms : algorithm_vector,
             length : output_vector.len() as i32
         };
