@@ -24,7 +24,7 @@ pub mod input{
             //check if user is done
             if word.trim() == "-d"
             {
-                println!("{word}");
+                //println!("{word}");
                 break 'word; //exit loop
             }
             //add to list of word sets
