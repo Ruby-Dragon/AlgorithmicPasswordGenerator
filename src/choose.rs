@@ -3,6 +3,8 @@ pub mod choose{
     use std::ops::Add;
     use crate::input::input::PasswordInput;
     use crate::algorithms;
+    use crate::algorithms::abbreviate::abrv;
+    use crate::algorithms::swap::swap_in_word;
     use crate::algorithms::vowel_nt::strip_vowels;
 
     pub fn run_algorithms(user_input: PasswordInput) -> String {
@@ -14,8 +16,8 @@ pub mod choose{
             //do stuff
             match user_input.algorithms[x]{
                 1 => final_password.push_str(&*strip_vowels(user_input.words[x].clone())),
-                2 => final_password.push_str("2"),
-                3 => final_password.push_str("3"),
+                2 => final_password.push_str(&*abrv(user_input.words[x].clone())),
+                3 => final_password.push_str(&*swap_in_word(user_input.words[x].clone())),
                 _=> final_password.push_str("1")
             };
 
