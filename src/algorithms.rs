@@ -5,7 +5,7 @@ pub mod vowel_nt
     pub fn strip_vowels(input : String) -> String{
         let mut final_string = String::new();
 
-        for letter in input.chars()
+        for letter in input.trim().chars()
         {
             'skip: loop
             {
@@ -33,7 +33,7 @@ pub mod abbreviate
     pub fn abrv(input : String) -> String
     {
         let mut final_string = String::new();
-        for letter in input.chars()
+        for letter in input.trim().chars()
         {
             'skip: loop
             {
@@ -57,7 +57,33 @@ pub mod swap
 {
     pub fn swap_in_word(input : String) -> String
     {
+        let mut temp_string = String::new();
+        //only uses the first word of whatever is passed in
+        for letter in input.trim().chars()
+        {
+            if letter == ' '
+            {
+                break;
+            }
+            temp_string.push(letter);
+        }
+
+        let first = temp_string.chars().nth(0).expect("Error: Input words contain non-ascii characters. Please do not use non-ascii characters.");
+        let last = temp_string.chars().nth(temp_string.len() -1).expect("Error: Input words contain non-ascii characters. Please do not use non-ascii characters.");
+
         let mut final_string = String::new();
+        final_string.push(last);
+
+        let mut count = 0;
+        for letter in temp_string.chars()
+        {
+            if count != 0 && count != temp_string.len() -1
+            {
+                final_string.push(letter);
+            }
+            count+=1;
+        }
+        final_string.push(first);
 
         return final_string;
     }
