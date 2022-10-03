@@ -20,13 +20,15 @@ none
 
 ## Usage
 
-This is a command line program, run from shell with cargo:
+This is a command line program, run from terminal with cargo:
 
     cargo run
 
-or if built:
+or if built, run from terminal with:
 
     ./AlgorithmicPasswordGenerator
+
+*do not use ./ on Windows*
 
 #### In Program:
 
