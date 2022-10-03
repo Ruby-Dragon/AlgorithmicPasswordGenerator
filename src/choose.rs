@@ -11,14 +11,15 @@ pub mod choose{
         let mut final_password = String::new();
 
         let mut x : usize = 0;
+        //look through each string in user_input
         while x < user_input.length as usize
         {
-            //do stuff
+            //check which algorithm the user wants the string to use
             match user_input.algorithms[x]{
                 1 => final_password.push_str(&*strip_vowels(user_input.words[x].clone())),
                 2 => final_password.push_str(&*abrv(user_input.words[x].clone())),
                 3 => final_password.push_str(&*swap_in_word(user_input.words[x].clone())),
-                _=> final_password.push_str("1")
+                _=> final_password.push_str("1")    //if the user enters an invalid answer, then the 1 algorithm will be used
             };
 
             x+=1;
