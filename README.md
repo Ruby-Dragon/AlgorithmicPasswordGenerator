@@ -1,4 +1,7 @@
 # AlgorithmicPasswordGenerator
+
+###### GNU Public Licence v3, 2022, Ruby-Dragon
+
 Generates a memorable password using a simple algorithm and user input
 
 ## Install
@@ -35,3 +38,10 @@ In the program you will be prompted for sets of words. Each set will be run thro
 
 When all word sets you wish to be present in the password have been input, use **-d** to exit. 
 Your finished password will be output. This password is ***NOT SAVED*** so please make sure to remember it or write it down somewhere.
+
+## Licence
+
+
+This software uses the GPL licence. Read the terms before using the source code.
+
+###### ALL DERIVATIVE WORKS MUST BE GPL v3 LICENCED AS WELL, AND MUST KEEP ALL COPYRIGHT NOTICES IN CODE. See the LICENCE for more information.
