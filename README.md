@@ -20,11 +20,11 @@ none
 
 ## Usage
 
-This is a command line program, run from terminal with cargo:
+This is a command line program, run from terminal with cargo: (compiles each time)
 
     cargo run
 
-or if built, run from terminal with:
+or if built, run from terminal with: (Recommended)
 
     ./AlgorithmicPasswordGenerator
 
