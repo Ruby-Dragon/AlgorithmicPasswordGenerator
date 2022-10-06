@@ -34,7 +34,7 @@ or if built, run from terminal with:
 
 In the program you will be prompted for sets of words. Each set will be run through one of 3 algorithms:
 
-1. No Vowels - Removes all vowels in all words input
+1. No Vowels - Removes all vowels in all words input, ex. "buy stuff" -> "bystff"
 2. Abbreviate - Removes all letters but capitals, ex. "YouTube" -> "YT"
 3. Swap - Swaps the first and last letters of the first word and discards all other words, ex. "hello world" -> "oellh"
 
