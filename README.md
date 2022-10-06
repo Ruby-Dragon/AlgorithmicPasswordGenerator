@@ -41,6 +41,8 @@ In the program you will be prompted for sets of words. Each set will be run thro
 When all word sets you wish to be present in the password have been input, use **-d** to exit. 
 Your finished password will be output. This password is ***NOT SAVED*** so please make sure to remember it or write it down somewhere.
 
+Note: Do NOT use any non-ascii characters! Unicode characters such as "Ê" are not supported for use in this program and will cause an error.
+
 ## Licence
 
 
